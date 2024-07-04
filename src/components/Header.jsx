@@ -1,4 +1,5 @@
 import React from "react";
+import { headerNav } from "../constants";
 
 const Header = () => {
     return (
@@ -6,7 +7,7 @@ const Header = () => {
             <div className="header__inner">
                 <div className="header__logo">
                     <a href="/">
-                        portfolio<em>vite</em>
+                        Hyungjun Doh<em>Portfolio</em>
                     </a>
                 </div>
                 <nav
@@ -15,23 +16,23 @@ const Header = () => {
                     aria-label="Main Menu"
                 >
                     <ul>
-                        <li>
-                            <a href="#intro">intro</a>
-                        </li>
-                        <li>
-                            <a href="#skill">skill</a>
-                        </li>
-                        <li>
-                            <a href="#site">site</a>
-                        </li>
-                        <li>
-                            <a href="#port">portfolio</a>
-                        </li>
-                        <li>
-                            <a href="#contact">contact</a>
-                        </li>
+                        {headerNav.map((item, key) => (
+                            <li key={key}>
+                                <a href={item.url}>{item.title}</a>
+                            </li>
+                        ))}
                     </ul>
                 </nav>
+                {/*<div
+                    className="header__nav_mobile"
+                    id="headerToggle"
+                    aria-controls="primary-menu"
+                    aria-expanded="false"
+                    role="button"
+                    tabindex="0"
+                >
+                    <span></span>
+                </div>*/}
             </div>
         </header>
     );
