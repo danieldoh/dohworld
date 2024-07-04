@@ -1,7 +1,14 @@
 import React from "react";
+import { useState } from "react";
 import { headerNav } from "../constants";
 
 const Header = () => {
+    const [show, setShow] = useState(false);
+
+    const toggleMenu = () => {
+        setShow((prevShow) => !prevShow);
+    };
+
     return (
         <header id="header" role="banner">
             <div className="header__inner">
@@ -11,7 +18,7 @@ const Header = () => {
                     </a>
                 </div>
                 <nav
-                    className="header__nav"
+                    className={`header__nav ${show ? "show" : ""}`}
                     role="navigation"
                     aria-label="Main Menu"
                 >
@@ -23,16 +30,17 @@ const Header = () => {
                         ))}
                     </ul>
                 </nav>
-                {/*<div
-                    className="header__nav_mobile"
+                <div
+                    className="header__nav__mobile"
                     id="headerToggle"
                     aria-controls="primary-menu"
-                    aria-expanded="false"
+                    aria-expanded={show ? "true" : "false"}
                     role="button"
                     tabindex="0"
+                    onClick={toggleMenu}
                 >
                     <span></span>
-                </div>*/}
+                </div>
             </div>
         </header>
     );
