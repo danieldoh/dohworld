@@ -11,6 +11,12 @@ const Intro = () => {
                     <span className="line"></span>
                     <span className="line"></span>
                 </div>
+                <div className="intro__text">
+                    <div className="text">
+                        <div>MS in Electrical and Computer Engineering</div>
+                        <div>Purdue University</div>
+                    </div>
+                </div>
             </div>
         </section>
     );
