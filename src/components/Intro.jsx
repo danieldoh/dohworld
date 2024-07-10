@@ -1,10 +1,11 @@
 import React from "react";
+import { introText } from "../constants";
 
 const Intro = () => {
     return (
         <section id="intro">
             <div className="intro__inner">
-                <h1 className="intro__title">Hyungjun Doh</h1>
+                <h1 className="intro__title">{introText.title}</h1>
                 <div className="intro__lines" aria-hidden="true">
                     <span className="line"></span>
                     <span className="line"></span>
@@ -13,8 +14,8 @@ const Intro = () => {
                 </div>
                 <div className="intro__text">
                     <div className="text">
-                        <div>MS in Electrical and Computer Engineering</div>
-                        <div>Purdue University</div>
+                        <div>{introText.desc[0]}</div>
+                        <div>{introText.desc[1]}</div>
                     </div>
                 </div>
                 <div className="intro__lines bottom" aria-hidden="true">
