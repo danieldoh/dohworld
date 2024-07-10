@@ -44,6 +44,24 @@
                 }
             }
         }
+
+        &.bottom {
+            .line {
+                margin-top: 0.5vw;
+                margin-bottom: 0;
+                display: none;
+
+                @media (max-width: 800px) {
+                    display: block;
+                }
+
+                @for $i from 1 to 5 {
+                    &:nth-child(#{$i}) {
+                        height: #{6 - $i}px;
+                    }
+                }
+            }
+        }
     }
     .intro__text {
         width: 100%;

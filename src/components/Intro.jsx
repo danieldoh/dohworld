@@ -17,6 +17,12 @@ const Intro = () => {
                         <div>Purdue University</div>
                     </div>
                 </div>
+                <div className="intro__lines bottom" aria-hidden="true">
+                    <span className="line"></span>
+                    <span className="line"></span>
+                    <span className="line"></span>
+                    <span className="line"></span>
+                </div>
             </div>
         </section>
     );
