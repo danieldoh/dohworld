@@ -20,3 +20,8 @@ export const headerNav = [
         url: "#contact",
     },
 ];
+
+export const introText = {
+    title: "Hyungjun Doh",
+    desc: ["MS in Electrical and Computer Engineering", "Purdue University"],
+};
