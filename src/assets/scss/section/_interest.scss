@@ -1,4 +1,4 @@
-.skill__inner {
+.interest__inner {
     padding: 16px;
     display: flex;
     justify-content: space-between;
@@ -7,7 +7,7 @@
         flex-direction: column;
     }
 
-    .skill__title {
+    .interest__title {
         position: sticky;
         top: 70px;
         left: 0;
@@ -36,7 +36,7 @@
             line-height: 2;
         }
     }
-    .skill__desc {
+    .interest__desc {
         width: 40%;
 
         @media (max-width: 800px) {
@@ -52,6 +52,18 @@
             @media (max-width: 800px) {
                 font-size: 20vw;
             }
+        }
+
+        h3 {
+            font-size: 1.5rem;
+            text-decoration: underline;
+            text-underline-position: under;
+            margin-bottom: 1vw;
+        }
+
+        p {
+            margin-bottom: 8vh;
+            font-size: 1.1rem;
         }
     }
 }
