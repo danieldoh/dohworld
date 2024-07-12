@@ -6,7 +6,7 @@ import Footer from "../components/Footer";
 import Intro from "../components/Intro";
 import Port from "../components/Port";
 import Skip from "../components/Skip";
-import Skill from "../components/Skill";
+import Interest from "../components/Interest";
 import Site from "../components/Site";
 
 const HomeView = () => {
@@ -16,7 +16,7 @@ const HomeView = () => {
             <Header />
             <Main>
                 <Intro />
-                <Skill />
+                <Interest />
                 <Site />
                 <Port />
                 <Contact />
